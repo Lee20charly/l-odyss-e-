@@ -15,7 +15,7 @@ export function About() {
           className="relative aspect-square overflow-hidden rounded-2xl"
         >
           <Image
-            src="/poisson sale sans nom.svg"
+            src="/a propos de nous.svg"
             alt="Notre restaurant"
             fill
             className="object-cover"
@@ -43,7 +43,7 @@ export function About() {
           <div className="grid grid-cols-3 gap-4 pt-4">
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=400&q=80"
+                src="/chef 1.svg"
                 alt="Notre cuisine"
                 width={200}
                 height={200}
@@ -52,7 +52,7 @@ export function About() {
             </div>
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&q=80"
+                src="/chef 2.svg"
                 alt="Nos ingrédients"
                 width={200}
                 height={200}
@@ -61,7 +61,7 @@ export function About() {
             </div>
             <div className="overflow-hidden rounded-lg">
               <Image
-                src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&q=80"
+                src="/bouillis 1234.svg"
                 alt="Notre équipe"
                 width={200}
                 height={200}
