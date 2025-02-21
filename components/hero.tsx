@@ -6,9 +6,12 @@ import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
 
 const images = [
-  "/WhatsApp Image 2025-02-20 à 05.24.27_4ec08a59.svg",
-  "/WhatsApp Image 2025-02-20 à 05.24.27_5c310805.svg",
-  "/WhatsApp Image 2025-02-20 à 05.24.27_6a559de6.svg",
+  "/dindon aux pommes.svg",
+  "/bouillons de poissons aux legumes.svg",
+  "/bouillon de nkumu poisson fume crevettes.svg",
+  "/sanglier auc aubergines.svg",
+  "/viande de brouse concombre epinard.svg",
+  "/poisson frit epinard.svg",
   // Ajoutez d'autres images ici
 ]
 

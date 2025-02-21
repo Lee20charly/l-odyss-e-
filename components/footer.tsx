@@ -7,8 +7,8 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-lg font-semibold">L&apos;Odyssée</h3>
-            <p className="text-sm text-muted-foreground">Découvrez l&apos;authenticité de la cuisine gabonaise</p>
+            <h3 className="mb-4 text-lg font-semibold">L&apos;Odyssée du Gabon</h3>
+            <p className="text-sm text-muted-foreground">L'âme du &apos;Gabon de votre assiette</p>
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact</h3>

@@ -15,7 +15,7 @@ export function About() {
           className="relative aspect-square overflow-hidden rounded-2xl"
         >
           <Image
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+            src="/poisson sale sans nom.svg"
             alt="Notre restaurant"
             fill
             className="object-cover"
