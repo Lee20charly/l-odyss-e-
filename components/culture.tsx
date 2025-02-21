@@ -6,15 +6,15 @@ import { History } from "lucide-react"
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=800&q=80",
+    src: "/bouillon de nkumu poisson fume crevettes.svg",
     alt: "Préparation traditionnelle",
   },
   {
-    src: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=80",
+    src: "/tubercule.svg",
     alt: "Ingrédients locaux",
   },
   {
-    src: "https://images.unsplash.com/photo-1635363638580-c2809d049eee?w=800&q=80",
+    src: "/boite sardina a l'oseille.svg",
     alt: "Culture culinaire",
   },
 ]
