@@ -15,7 +15,7 @@ const topDishes = [
     name: "Poulet Nyembwe Royal",
     description: "Notre plat signature avec sauce aux noix de palme",
     image: "/viande de brouse au nwebwe.svg",
-    price: 24.99,
+    price: 16500,
     rating: 4.9,
     reviews: 128,
   },
@@ -24,7 +24,7 @@ const topDishes = [
     name: "Poisson Fumé au Manioc",
     description: "Poisson fumé traditionnel et son accompagnement",
     image: "/paquet de poisson.svg",
-    price: 19.99,
+    price: 13200,
     rating: 4.8,
     reviews: 96,
   },
@@ -33,7 +33,7 @@ const topDishes = [
     name: "Bouillon d'Écrevisses",
     description: "Bouillon savoureux aux épices locales",
     image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800&q=80",
-    price: 22.99,
+    price: 15200,
     rating: 4.7,
     reviews: 84,
   },
@@ -108,7 +108,7 @@ export function TopDishes() {
                   <span className="text-sm text-muted-foreground">({dish.reviews} avis)</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-primary">{dish.price.toFixed(2)} €</span>
+                  <span className="text-lg font-bold text-primary">{dish.price} FCFA</span>
                   <Button onClick={() => handleAddToCart(dish)} variant="secondary">
                     Ajouter au panier
                   </Button>
@@ -121,4 +121,3 @@ export function TopDishes() {
     </section>
   )
 }
-

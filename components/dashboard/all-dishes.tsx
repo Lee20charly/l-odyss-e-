@@ -11,6 +11,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useCart } from "@/components/cart-provider"
 import { useToast } from "@/components/ui/use-toast"
 
+const convertToFCFA = (price: number) => (price * 655.957).toFixed(0) + " FCFA";
+
 const allDishes = [
   {
     id: "1",
@@ -36,7 +38,6 @@ const allDishes = [
     price: 8.99,
     category: "Accompagnements",
   },
-  // Ajoutez plus de plats ici
 ]
 
 const categories = ["Tous", "Plats Principaux", "Accompagnements", "Desserts"]
@@ -136,7 +137,7 @@ export function AllDishes() {
                   <p className="text-sm text-muted-foreground">{dish.description}</p>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-primary">{dish.price.toFixed(2)} €</span>
+                  <span className="text-lg font-bold text-primary">{convertToFCFA(dish.price)}</span>
                   <Button onClick={() => handleAddToCart(dish)} variant="secondary">
                     Ajouter au panier
                   </Button>
@@ -149,4 +150,3 @@ export function AllDishes() {
     </section>
   )
 }
-
