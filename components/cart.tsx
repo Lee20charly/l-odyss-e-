@@ -36,13 +36,13 @@ export function Cart() {
 
     // Préparer le message WhatsApp
     const message = encodeURIComponent(
-      `🍽️ Nouvelle commande de L'Odyssée:\n\n` +
+      `🍽️ Nouvelle commande de L'Odyssée du Gabon:\n\n` +
         state.items.map((item) => `- ${item.quantity}x ${item.name} (${item.price.toFixed(2)}€)`).join("\n") +
         `\n\nTotal: ${state.total.toFixed(2)}€`,
     )
 
     // Numéro WhatsApp fictif - Remplacez par votre vrai numéro
-    const phoneNumber = "24174000000"
+    const phoneNumber = "24162569927"
 
     // Ouvrir WhatsApp
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")

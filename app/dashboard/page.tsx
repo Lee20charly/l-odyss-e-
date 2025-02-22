@@ -23,7 +23,7 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="flex flex-col gap-8 py-8">
+    <div className="flex justify-center items-center flex-col gap-8 py-8">
       <DashboardHero />
       <div className="container space-y-8">
         <TopDishes />

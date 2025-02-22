@@ -7,7 +7,7 @@ export function DashboardHero() {
   const { user } = useAuth()
 
   return (
-    <section className="bg-primary/10">
+    <section className="bg-primary/10 items-start flex ">
       <div className="container py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
