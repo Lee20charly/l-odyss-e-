@@ -34,17 +34,14 @@ export function Cart() {
       return
     }
 
-    // Préparer le message WhatsApp
     const message = encodeURIComponent(
       `🍽️ Nouvelle commande de L'Odyssée du Gabon:\n\n` +
-        state.items.map((item) => `- ${item.quantity}x ${item.name} (${item.price.toFixed(2)}€)`).join("\n") +
-        `\n\nTotal: ${state.total.toFixed(2)}€`,
+        state.items.map((item) => `- ${item.quantity}x ${item.name} (${item.price.toFixed(0)} FCFA)`).join("\n") +
+        `\n\nTotal: ${state.total.toFixed(0)} FCFA`
     )
 
-    // Numéro WhatsApp fictif - Remplacez par votre vrai numéro
     const phoneNumber = "24162569927"
 
-    // Ouvrir WhatsApp
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
   }
 
@@ -87,7 +84,7 @@ export function Cart() {
                   >
                     <div className="flex-1">
                       <h4 className="font-medium">{item.name}</h4>
-                      <p className="text-sm text-muted-foreground">{item.price.toFixed(2)} €</p>
+                      <p className="text-sm text-muted-foreground">{item.price.toFixed(0)} FCFA</p>
                     </div>
                     <div className="flex items-center gap-2">
                       <Button
@@ -113,7 +110,7 @@ export function Cart() {
                 <div className="pt-4">
                   <div className="flex justify-between border-t pt-4">
                     <span className="font-medium">Total</span>
-                    <span className="font-bold">{state.total.toFixed(2)} €</span>
+                    <span className="font-bold">{state.total.toFixed(0)} FCFA</span>
                   </div>
                   <Button
                     className="mt-4 w-full bg-primary text-white hover:bg-primary/90"
@@ -131,4 +128,3 @@ export function Cart() {
     </Sheet>
   )
 }
-

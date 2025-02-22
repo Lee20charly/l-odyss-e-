@@ -110,7 +110,7 @@ export function FeaturedDishes() {
                 <CardTitle className="mb-2 text-primary">{dish.name}</CardTitle>
                 <CardDescription className="mb-4">{dish.description}</CardDescription>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-secondary">{dish.price.toFixed(2)} €</span>
+                  <span className="text-lg font-bold text-secondary">{dish.price.toFixed(0)} FCFA</span>
                   <Button
                     onClick={() => handleAddToCart(dish)}
                     size="sm"
@@ -128,4 +128,3 @@ export function FeaturedDishes() {
     </section>
   )
 }
-

@@ -11,7 +11,7 @@ const specialties = [
     name: "manioc tena",
     description: "Notre version luxueuse de manioc tena ",
     image: "/manioc tena.svg",
-    price: 24.99,
+    price: 1000,
     isSpicy: false,
   },
   {
@@ -19,15 +19,15 @@ const specialties = [
     name: "Poisson salé",
     description: "",
     image: "/poisson sale choux carottes.svg",
-    price: 19.99,
+    price: 6000,
     isSpicy: false,
   },
   {
     id: 3,
     name: "Bouillon  de poissons",
-    description: "Bouillon savoureux préparé avec deslegumes fraîches et des épices locales",
+    description: "Bouillon savoureux préparé avec des légumes fraîches et des épices locales",
     image: "/bouillons de poissons aux legumes.svg",
-    price: 22.99,
+    price: 5000,
     isSpicy: true,
   },
 ]
@@ -83,7 +83,7 @@ export function Specialties() {
                   {specialty.isSpicy && <Badge variant="secondary">Épicé</Badge>}
                 </div>
                 <p className="mb-4 text-sm text-muted-foreground">{specialty.description}</p>
-                <p className="text-lg font-bold text-secondary">{specialty.price.toFixed(2)} €</p>
+                <p className="text-lg font-bold text-secondary">{specialty.price} FCFA</p>
               </div>
             </motion.div>
           ))}
@@ -92,4 +92,3 @@ export function Specialties() {
     </section>
   )
 }
-

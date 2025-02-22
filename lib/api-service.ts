@@ -14,7 +14,7 @@ const mockDishes = [
     name: "Nyembwe viande fume",
     description: "viande mijoté dans une sauce à base de noix de palme",
     image: "/nwebwe-viande-fume.svg",
-    price: 15.99,
+    price: 8000,
     category: "Plats Principaux",
   },
   {
@@ -22,7 +22,7 @@ const mockDishes = [
     name: "obergine choux",
     description: "",
     image: "/obergine choux poisson sale.svg",
-    price: 2000,
+    price: 4000,
     category: "Plats Principaux",
   },
   {
@@ -30,7 +30,7 @@ const mockDishes = [
     name: "boulette de banane",
     description: "banane pilée",
     image: "/boulette de banane.svg",
-    price: 8.99,
+    price: 1000,
     category: "Accompagnements",
   },
   {
@@ -38,7 +38,7 @@ const mockDishes = [
     name: "bouillons de poissons",
     description: "Poisson frais avec des épices locales",
     image: "/bouillons de poissons aux legumes.svg",
-    price: 18.99,
+    price: 5000,
     category: "Plats Principaux",
   },
   // {
