@@ -15,7 +15,10 @@ export function Footer() {
             <address className="not-italic text-sm text-muted-foreground">
               Tel: +241 62 56 99 27
               <br />
-              Email: syphrelle5@gmail.com
+              <a href="mailto:syphrelle5@gmail.com" className="underline hover:text-foreground">
+                syphrelle5@gmail.com
+              </a>
+
             </address>
           </div>
           {/* <div>
