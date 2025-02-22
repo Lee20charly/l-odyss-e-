@@ -17,7 +17,7 @@ export default function Home() {
         <Specialties />
       </section>
       <section className="w-full">
-        <h2 className="mb-8 text-4xl font-bold text-center text-primary">Notre Culture Culinaire</h2>
+        {/* <h2 className="mb-8 text-4xl font-bold text-center text-primary">Notre Culture Culinaire</h2> */}
         <Culture />
       </section>
       <section className="w-full">

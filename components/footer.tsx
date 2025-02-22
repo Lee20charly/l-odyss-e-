@@ -13,10 +13,6 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact</h3>
             <address className="not-italic text-sm text-muted-foreground">
-              123 Rue de la Cuisine
-              <br />
-              Libreville, Gabon
-              <br />
               Tel: +241 62 56 99 27
               <br />
               Email: syphrelle5@gmail.com

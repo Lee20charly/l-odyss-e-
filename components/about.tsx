@@ -31,7 +31,7 @@ export function About() {
         >
           <h2 className="text-3xl font-bold tracking-tighter text-primary sm:text-4xl">Notre Histoire</h2>
           <p className="leading-relaxed text-muted-foreground">
-            L&apos;Odyssée est née d&apos;une passion pour la cuisine gabonaise et d&apos;un désir de partager notre
+            L&apos;Odyssée du Gabon est née d&apos;une passion pour la cuisine gabonaise et d&apos;un désir de partager notre
             riche héritage culinaire avec le monde. Chaque plat raconte une histoire, transmet une tradition et célèbre
             la diversité de notre culture.
           </p>

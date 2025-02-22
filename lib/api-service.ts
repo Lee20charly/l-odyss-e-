@@ -36,7 +36,7 @@ const mockDishes = [
     id: "4",
     name: "bouillons de poissons",
     description: "Poisson frais avec des épices locales",
-    image: "/bouillons de poissons.svg",
+    image: "/bouillons de poissons aux legumes.svg",
     price: 18.99,
     category: "Plats Principaux",
   },

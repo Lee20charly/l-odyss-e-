@@ -74,9 +74,9 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Button size="lg" className="text-lg" onClick={scrollToPlats}>
+          {/* <Button size="lg" className="text-lg" onClick={scrollToPlats}>
             Découvrir nos plats
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
     </section>
