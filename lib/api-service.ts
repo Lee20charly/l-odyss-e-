@@ -5,7 +5,8 @@ type ApiResponse<T> = {
 
 const API_DELAY = 1000 // Simule un délai réseau
 
-const mockUsers = [{ id: "1", email: "test@test.com", password: "password123", name: "Test User" }]
+const mockUsers = [{ id: "1", email: "test@test.com", password: "password123", name: "madame" }]
+
 
 const mockDishes = [
   {

@@ -13,21 +13,21 @@ import { useToast } from "@/components/ui/use-toast"
 const specialsOfTheDay = [
   {
     id: "special1",
-    name: "Combo Traditionnel",
-    description: "Assortiment de plats traditionnels gabonais",
+    name: "feuil de manioc",
+    description: "feuil de manioc",
     image: "/feuil de manioc.svg",
-    price: 29.99,
-    originalPrice: 39.99,
+    price: 5000,
+    originalPrice: 6500,
     availableUntil: "20:00",
     isSpicy: true,
   },
   {
     id: "special2",
-    name: "Plateau Découverte",
-    description: "Sélection de nos meilleurs plats pour 2 personnes",
+    name: "nkumu pate d'arachide poisson fume",
+    description: "meilleurs plats pour 2 personnes",
     image: "/nkumu pate d'arachide poisson fume.svg",
-    price: 90.80,
-    originalPrice: 54.99,
+    price: 6000,
+    originalPrice: 8000,
     availableUntil: "22:00",
     isSpicy: false,
   },
@@ -107,13 +107,13 @@ export function DailySpecials() {
                 <div className="flex items-center justify-between">
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-lg font-bold text-primary">{special.price.toFixed(2)} €</span>
+                      <span className="text-lg font-bold text-primary">{special.price} FCFA</span>
                       <span className="text-sm text-muted-foreground line-through">
-                        {special.originalPrice.toFixed(2)} €
+                        {special.originalPrice} FCFA
                       </span>
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      Économisez {(special.originalPrice - special.price).toFixed(2)} €
+                      Économisez {special.originalPrice - special.price} FCFA
                     </p>
                   </div>
                   <Button onClick={() => handleAddToCart(special)} variant="secondary">
@@ -128,4 +128,3 @@ export function DailySpecials() {
     </section>
   )
 }
-

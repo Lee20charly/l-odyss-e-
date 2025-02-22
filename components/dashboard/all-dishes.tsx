@@ -11,31 +11,29 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useCart } from "@/components/cart-provider"
 import { useToast } from "@/components/ui/use-toast"
 
-const convertToFCFA = (price: number) => (price * 655.957).toFixed(0) + " FCFA";
-
 const allDishes = [
   {
     id: "1",
-    name: "Poulet Nyembwe",
-    description: "Poulet mijoté dans une sauce à base de noix de palme",
+    name: "epinard poissons fume",
+    description: "epinard poissons fume",
     image: "/epinard poissons fume.svg",
-    price: 15.99,
+    price: 4500,
     category: "Plats Principaux",
   },
   {
     id: "2",
-    name: "Manioc à la Sauce",
-    description: "Manioc frais accompagné d'une sauce aux légumes",
+    name: "folong poisson frais crevettes",
+    description: "folong poisson frais crevettes accompagné d'une sauce aux légumes",
     image: "/folong poisson frais crevettes.svg",
-    price: 12.99,
+    price: 6500,
     category: "Accompagnements",
   },
   {
     id: "3",
-    name: "Baton de Manioc",
-    description: "Manioc fermenté et cuit à la vapeur",
-    image: "/maquereaux fume aux epenards.svg",
-    price: 8.99,
+    name: "bouillon de nkumu poisson fume crevettes",
+    description: "bouillon de nkumu poisson fume crevettes",
+    image: "/bouillon de nkumu poisson fume crevettes.svg",
+    price: 5000,
     category: "Accompagnements",
   },
 ]
@@ -137,7 +135,7 @@ export function AllDishes() {
                   <p className="text-sm text-muted-foreground">{dish.description}</p>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-primary">{convertToFCFA(dish.price)}</span>
+                  <span className="text-lg font-bold text-primary">{dish.price} FCFA</span>
                   <Button onClick={() => handleAddToCart(dish)} variant="secondary">
                     Ajouter au panier
                   </Button>
